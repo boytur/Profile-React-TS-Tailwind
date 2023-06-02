@@ -65,7 +65,7 @@ function Banner() {
         </div>
         <div className=" w-full flex justify-center">
           <img
-            className=" w-[482px] h-[482px] object-contain"
+            className=" w-[482px] h-[482px] object-contain mix-blend-lighten"
             src={ImgProfile}
             alt=""
           />

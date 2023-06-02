@@ -2,7 +2,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-body{
+
+body {
   font-family: 'Aldrich', sans-serif;
   background-image: url('./assets/site-bg.jpg');
   transition: 1s ease-out;
@@ -48,7 +49,7 @@ body{
 
 @layer base {
   body {
-    @apply  text-lg leading-8 text-white;
+    @apply text-lg leading-8 text-white;
   }
 
   .h2 {
@@ -60,7 +61,7 @@ body{
   }
 
   .btn {
-    @apply rounded-full  text-white font-medium;
+    @apply rounded-full text-white font-medium;
   }
 
   .btn-sm {
@@ -78,4 +79,38 @@ body{
   .text-gradient {
     @apply bg-gradient-to-r text-transparent bg-clip-text from-[#42A6E3] to-[#FF56F6] font-bold font-primary hover: from-[#FF56F6] hover:to-[#42A6E3];
   }
+}
+
+@keyframes rainbow {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@layer utilities {
+  @keyframes rainbow {
+    0% {
+      background-position: 0% 50%;
+    }
+
+    50% {
+      background-position: 100% 50%;
+    }
+
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+}
+
+.text-rainbow{
+  color: linear-gradient(92.23deg, #ff56f6 21.43%, #b936ee 50.63%, #3bace2 100%, #406aff 117.04%);;
 }
